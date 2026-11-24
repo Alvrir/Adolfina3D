@@ -4,7 +4,7 @@
 // ============================================================
 export const CONFIG = {
   // Textos
-  schoolName: 'Nuestra escuela',          // aparece arriba a la izquierda y en la pantalla de carga
+  schoolName: 'Adolfina 3D',          // aparece arriba a la izquierda y en la pantalla de carga
   pageTitle: 'Recorrido virtual',          // título de la pestaña del navegador
 
   // Modelo (el archivo va en la carpeta /models).
@@ -33,7 +33,7 @@ export const CONFIG = {
   // Para encontrar los valores fácilmente: abrí el sitio con ?debug, caminá hasta el lugar
   // donde querés empezar, mirá hacia donde querés, tocá "Copiar spawn" y pegá acá la línea.
   // Ejemplo:  spawn: { x: 6.02, y: 0.20, z: 7.66, yaw: 135 },
-  spawn: null,
+ spawn: { x: -19.08, y: 0.20, z: 0.34, yaw: -64 },
 
   // Escala: 'auto' detecta si el modelo está en centímetros (lo habitual al exportar
   // de Sweet Home 3D) y lo pasa a metros. También podés poner un número fijo,
