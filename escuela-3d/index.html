@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#0f1720">
+  <title>Recorrido virtual de la escuela</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+      "three-mesh-bvh": "https://unpkg.com/three-mesh-bvh@0.7.3/build/index.module.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <canvas id="c"></canvas>
+
+  <div id="title"></div>
+
+  <div id="modelSwitch" role="group" aria-label="Versión del modelo"></div>
+
+  <div id="controls">
+    <button id="btnMode" type="button">🚶 Caminar</button>
+    <button id="btnRun" type="button" hidden>🏃 Correr: no</button>
+    <button id="btnQuality" type="button">Calidad: alta</button>
+    <button id="btnHelp" type="button" aria-label="Ayuda">?</button>
+    <button id="btnFs" type="button" aria-label="Pantalla completa">⛶</button>
+  </div>
+
+  <div id="joy" hidden><div id="stick"></div></div>
+  <div id="debug" hidden>
+    <div id="dbgText">—</div>
+    <button id="btnCopySpawn" type="button">📍 Copiar spawn (P)</button>
+  </div>
+
+  <div id="toast"></div>
+
+  <div id="help" hidden>
+    <div class="box">
+      <h2>Cómo recorrer la escuela</h2>
+      <div class="orbit-only"><p><b>Vista general</b></p>
+      <ul>
+        <li>Un dedo (o clic y arrastrar): girar alrededor.</li>
+        <li>Pellizcar (o rueda del mouse): acercar y alejar.</li>
+        <li>Dos dedos (o clic derecho): mover la vista.</li>
+        <li><b>Doble toque</b> sobre un lugar: entrar caminando ahí.</li>
+      </ul></div>
+      <p><b>Modo caminata</b></p>
+      <ul>
+        <li>Celular: joystick a la izquierda para moverte, arrastrá el resto de la pantalla para mirar.</li>
+        <li>Compu: W A S D o flechas para moverte, arrastrar con el mouse para mirar, Shift para correr.</li>
+      </ul>
+      <button id="btnHelpClose" type="button">Entendido</button>
+    </div>
+  </div>
+
+  <div id="loader">
+    <div class="box">
+      <h1 id="loaderTitle"></h1>
+      <p id="loaderMsg">Cargando…</p>
+      <div class="bar"><div id="barFill"></div></div>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
