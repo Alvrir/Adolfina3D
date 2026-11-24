@@ -39,7 +39,7 @@ export const CONFIG = {
   // de Sweet Home 3D) y lo pasa a metros. También podés poner un número fijo,
   // por ejemplo 0.01 (cm -> m) o 1 (ya está en metros).
   // También se puede probar sin editar nada agregando ?scale=0.01 a la dirección.
-  unitScale: auto,
+  unitScale: 'auto',
 
   // Modo caminata (medidas en metros, ya con el modelo escalado)
   eyeHeight: 1.65,       // altura de los ojos
