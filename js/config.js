@@ -33,7 +33,7 @@ export const CONFIG = {
   // Para encontrar los valores fácilmente: abrí el sitio con ?debug, caminá hasta el lugar
   // donde querés empezar, mirá hacia donde querés, tocá "Copiar spawn" y pegá acá la línea.
   // Ejemplo:  spawn: { x: 6.02, y: 0.20, z: 7.66, yaw: 135 },
-  spawn:{ x: -19.08, y: 0.20, z: 0.56, yaw: -62 },
+  spawn:null
 
   // Escala: 'auto' detecta si el modelo está en centímetros (lo habitual al exportar
   // de Sweet Home 3D) y lo pasa a metros. También podés poner un número fijo,
